@@ -9,14 +9,13 @@ use Symfony\Component\Routing\Annotation\Route;
 class CategorieController extends AbstractController
 {
     /**
-     * @Route("/categorie/show/{sms?}", name="categorie_show",methods={"POST","GET"})
+     * @Route("/categorie/show", name="categorie_show",methods={"POST","GET"})
      */
-    public function index($sms): Response
+    public function index(): Response
     {
-        $x=10;
+       
         return $this->render('categorie/index.html.twig', [
-            'x1' => $x,
-            'sms'=>$sms
+           
         ]);
     }
 }
