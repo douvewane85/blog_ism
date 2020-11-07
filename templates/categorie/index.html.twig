@@ -41,10 +41,11 @@
                     </tr>
                   </tfoot>
                   <tbody>
-                  
+                  {% for  categorie in categories %}
+                 
                     <tr>
-                      <td>Jonas Alexander</td>
-                      <td>Developer</td>
+                      <td>{{categorie.id}}</td>
+                      <td>{{categorie.libelle}}</td>
                       <td>
                           <a href="#" class="btn btn-success btn-icon-split">
                             <span class="icon text-white-50">
@@ -68,6 +69,8 @@
                       </td>
                       
                     </tr>
+                    
+                  {% endfor %}
                    
                   </tbody>
                 </table>
